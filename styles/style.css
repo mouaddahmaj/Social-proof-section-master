@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan";
+    font-size: 12px;
+}
+a{
+    color:  hsl(300, 43%, 22%);
+    color:hsl(333, 80%, 67%) ;
+    color:hsl(303, 10%, 53%) ;
+    color: hsl(300, 24%, 96%);
+    color: hsl(0, 0%, 100%);
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+body>div{
+
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.partie-globale{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+.partie-haut{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.partie-gauche{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    width: 60%;
+    font-size: 30px;
+    color:hsl(300, 43%, 22%) ;
+    margin-bottom: 20px;
+}
+.partie-gauche p{
+    line-height: 15px;
+    width: 70%;
+    margin-bottom: 40px;
+    color:hsl(303, 10%, 53%) ;
+}
+.partie-droite{
+    display: flex;
+    
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.partie-droite>div{
+    margin: 4px 0;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    color:hsl(300, 43%, 22%) ;
+    font-weight: bold;
+}
+.partie-droite>div:first-child+div{
+    margin-left: 9%;
+}
+.partie-droite>div:last-child{
+    margin-left: 18%;
+}
+.partie-droite>div>div:first-child{
+    margin:0 15px ;
+    font-size: 14px;
+}
+
+.partie-bas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+
+}
+.partie-bas>div{
+    width: 31.5%;
+    border-radius: 5px;
+    background-color: hsl(300, 43%, 22%);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    
+}
+.partie-bas>div:first-child+div{
+    margin-top: 10px;
+}
+.partie-bas>div:last-child{
+    margin-top: 20px;
+}
+.partie-bas>div>div{
+    width: 85%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.partie-bas>div>div>div:first-child{
+    margin: 30px 0 20px ;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius:50% ;
+}
+h6,.partie-bas p{
+    color:hsl(0, 0%, 100%) ;
+    line-height: 15px;
+}
+span{
+   color: hsl(333, 80%, 67%);
+}
+@media screen and (max-width:475px) {
+    body{
+        display: block;
+    }
+    body>div{
+        width: 100%;
+        display: block;
+    }
+    .partie-globale{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .partie-haut{
+       
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partie-gauche{
+      
+        width: 100%;
+    }
+    .partie-gauche h1{
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .partie-gauche p{
+        width: 100%;
+       
+    }
+
+    .partie-gauche{
+      
+
+        width:100%;
+    }
+    .partie-droite{
+        width: 100%;
+
+    }
+    .partie-droite>div{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .partie-droite>div:first-child+div{
+        margin-left: 0;
+    }
+    .partie-droite>div:last-child{
+        margin-left: 0;
+    }
+    .partie-droite>div>div:first-child{
+        margin-bottom: 5px ;
+        
+    }
+    
+    .partie-bas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    
+    
+    }
+    .partie-bas>div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .partie-bas>div:first-child+div{
+        margin-top: 0;
+    }
+    .partie-bas>div:last-child{
+        margin-top: 0;
+    }
+
+}
